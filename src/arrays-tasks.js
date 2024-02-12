@@ -178,9 +178,7 @@ function isValueEqualsIndex(arr) {
  *    insertItem([ 1, 'b', 'c'], 'x', 0) => [ 'x', 1, 'b', 'c' ]
  */
 function insertItem(arr, item, index) {
-  const newArr = arr;
-  newArr.splice(index, 0, item);
-  return newArr;
+  return arr.splice(index, 0, item);
 }
 
 /**
@@ -256,8 +254,10 @@ function toStringList(arr) {
  *   distinct([ 1, 1, 2, 2, 3, 3, 4, 4]) => [ 1, 2, 3, 4]
  *   distinct([]) => []
  */
-function distinct(/* arr */) {
-  throw new Error('Not implemented');
+function distinct(arr) {
+  const newSet = new Set(arr);
+  const newArr = [...newSet];
+  return newArr;
 }
 
 /**
