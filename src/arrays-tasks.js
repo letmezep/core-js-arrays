@@ -195,8 +195,7 @@ function insertItem(arr, item, index) {
  *    getHead([ 'a', 'b', 'c', 'd'], 0) => []
  */
 function getHead(arr, n) {
-  const newArray = arr.slice(0, n);
-  return newArray;
+  return arr.slice(0, n);
 }
 
 /**
@@ -210,8 +209,8 @@ function getHead(arr, n) {
  *    getTail([ 'a', 'b', 'c', 'd'], 3) => [ 'b', 'c', 'd' ]
  *    getTail([ 'a', 'b', 'c', 'd'], 0) => []
  */
-function getTail(/* arr, n */) {
-  throw new Error('Not implemented');
+function getTail(arr, n) {
+  return arr.slice(arr.length - n);
 }
 
 /**
