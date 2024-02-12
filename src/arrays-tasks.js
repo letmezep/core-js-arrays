@@ -186,7 +186,7 @@ function isValueEqualsIndex(arr) {
  *    insertItem([ 1, 'b', 'c'], 'x', 0) => [ 'x', 1, 'b', 'c' ]
  */
 function insertItem(arr, item, index) {
-  const newArr = arr.slice();
+  const newArr = arr;
   newArr.splice(index, 0, item);
   return newArr;
 }
